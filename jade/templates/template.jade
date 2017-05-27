@@ -1,0 +1,22 @@
+block config 
+  include ../config/variables
+
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title #{title}
+    meta(name="description" content="")
+    link(rel="icon" href="")
+    link(rel="stylesheet" href="css/#{stylesheet}")
+  body
+    header
+      block header
+    main 
+      block main
+    aside 
+      block aside
+    footer 
+      block footer    
+
+
