@@ -1,5 +1,55 @@
 .header-container {
   width: 90%;
-  height: 20vh;
   background: #eeeffa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .3em 0;
+  padding: 0;
+}
+
+.header-logo-link {
+  padding-left: .5em;
+  height: 32px;
+}
+
+.header-logo-img {
+  width: 32px;
+}
+
+.header-menu {
+  background: steelblue;
+}
+
+.header-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+}
+
+.header-menu__item {
+
+  &:first-child {
+    border-left: 2px solid #273680;
+  }
+
+  float: left;
+  padding: 0 1em;
+  text-align: center;
+  font-size: 1em;
+  line-height: 2em;
+  &{
+    border-right: 2px solid #273680;
+  }
+  & a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+  }
+  &:hover {
+    background: rgba(black,0.1);
+  }
 }

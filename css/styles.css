@@ -11,9 +11,57 @@ body {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .header-container {
   width: 90%;
-  height: 20vh;
-  background: #eeeffa; }
+  background: #eeeffa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .3em 0;
+  padding: 0; }
+
+.header-logo-link {
+  padding-left: .5em;
+  height: 32px; }
+
+.header-logo-img {
+  width: 32px; }
+
+.header-menu {
+  background: steelblue; }
+
+.header-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table; }
+
+.header-menu__item {
+  float: left;
+  padding: 0 1em;
+  text-align: center;
+  font-size: 1em;
+  line-height: 2em; }
+  .header-menu__item:first-child {
+    border-left: 2px solid #273680; }
+  .header-menu__item {
+    border-right: 2px solid #273680; }
+  .header-menu__item a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white; }
+  .header-menu__item:hover {
+    background: rgba(0, 0, 0, 0.1); }
