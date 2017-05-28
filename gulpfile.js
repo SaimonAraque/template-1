@@ -25,7 +25,7 @@ gulp.task('default', function() {
     });
 
     //gulp.watch("./scss/components/*.scss", ['sass']);
-    gulp.watch("./scss/*.scss", ['sass']); 
+    gulp.watch("./scss/**/*.scss", ['sass']); 
     gulp.watch("./*.html").on('change', browserSync.reload);
     gulp.watch('./jade/**/*.jade', ['jade']);
 });

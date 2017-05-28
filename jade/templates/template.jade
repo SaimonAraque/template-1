@@ -7,16 +7,16 @@ html(lang="es")
     meta(charset="UTF-8")
     title #{title}
     meta(name="description" content="")
-    link(rel="icon" href="")
+    link(rel="icon" href="#{logoPath}")
     link(rel="stylesheet" href="css/#{stylesheet}")
   body
-    header
+    header.header-container
       block header
-    main 
+    main.main-container
       block main
-    aside 
+    aside.aside-container 
       block aside
-    footer 
-      block footer    
+    footer.footer-container 
+      block footer
 
 

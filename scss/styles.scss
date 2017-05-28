@@ -6,16 +6,8 @@ body {
   background: #B1CDD1;
   min-height: 100vh;
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.header-title {
-  text-align: center;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 2.6em;
-  color: #3355FF;
-
-  &:hover {
-    
-  }
-}
+@import "components/header";
